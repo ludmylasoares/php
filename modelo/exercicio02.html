@@ -1,0 +1,45 @@
+<!--Autora: Ludmyla Oliveira Soares
+	Data: /10/2019
+	Função: 
+-->
+<!DOCTYPE html>
+	<head>
+		<title>PHP | Exercícios 02</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="estilo.css" rel="stylesheet">
+	</head>
+		<!-- Início validação formulário em branco -->
+		<script type="text/javascript" language="javascript">
+			function verificaNum(form) {
+				var x = form.num1.value;
+				var y = form.num2.value;
+				if (x == "" || y == "") {
+					alert("Por favor, preencha todos os campos!");
+					form.num1.focus();
+					return false;
+				}
+			}
+		</script>
+		<!-- Fim validação formulário em branco --></script>
+	<body>	
+		<div>
+			<!-- Início formulário para entrada e envio de dados -->
+			<form name="form" method="post" action="exercicio02.php" onsubmit="return verificaNum(this)">
+				<h1>Exercício 02</h1>
+				<!--<p class="paragrafo">Construir um algoritmo que leia 2 números e efetue a adição: </p>
+				a.) Caso o valor somado seja maior que 20, este deverá ser apresentado somando-se a ele mais 8 e; </p>
+				b.) Caso o valor somado seja menor ou igual a 20, este deverá ser apresentado subtraindo-se 5.</p>  
+				<a class="paragrafo">Número 1: </a>
+				<input type="number" name="num1"></p>
+				<a class="paragrafo">Número 2: </a>
+				<input type="number" name="num2" ></p>
+				<input class="botao" type="submit" value="Soma"> -->
+		</div>
+			<!-- Fim formulário para entrada e envio de dados -->	
+			</form>
+		</div>
+	</body>
+</html>
+
+
+

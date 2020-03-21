@@ -1,0 +1,46 @@
+<!--Autora: Ludmyla Oliveira Soares
+	Data: 22/10/2019
+	Função: A biblioteca de uma universidade deseja fazer um algoritmo que leia o nome do livro que será emprestado, o tipo de usuário (professor ou aluno) e 
+			possa imprimir um recibo conforme mostrado a seguir. Considerar que o professor tem 10 dias para devolver o livro o aluno somente 3 dias
+-->
+<!DOCTYPE html>
+	<head>
+		<title>PHP | Exercícios 07</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="estilo.css" rel="stylesheet">
+	</head>
+		<!-- Início validação formulário em branco -->
+		<script type="text/javascript" language="javascript">
+			function verificaNum(form) {
+				var x = form.nome.value;
+					if (x == "") {
+					alert("Por favor, preencha todos os campos!");
+					form.nome.focus();
+					return false;
+				}
+			}
+		</script>
+		<!-- Fim validação formulário em branco -->
+	<body>
+		<div>
+			<!-- Início formulário para entrada e envio de dados -->
+			<form name="form" method="post" action="exercicio07.php" onsubmit="return verificaNum(this)">
+				<h1>Exercício 07</h1>
+					<p class="paragrafo">A biblioteca de uma universidade deseja fazer um algoritmo que leia o nome do livro que será emprestado, o tipo de usuário (professor ou aluno) e 
+				possa imprimir um recibo conforme mostrado a seguir. Considerar que o professor tem 10 dias para devolver o livro o aluno somente 3 dias. </p>
+					<p><a class="paragrafo">Digite o nome do livro:  </a> <input type="text" name="nome"></p>
+					<a class="paragrafo">Selecione o tipo do usuário: </a>
+						<select name="usuario" style="width:150px; height:21px">
+							<option name="aluno" value="aluno" selected="selected"  >Aluno</option>
+							<option name="professor" value="professor" >Professor</option>
+						</select><br/>
+					<input class="botao" type="submit" value="Enviar">
+					<br/>
+			<!-- Fim formulário para entrada e envio de dados -->	
+			</form>
+		</div>
+	</body>
+</html>
+
+
+

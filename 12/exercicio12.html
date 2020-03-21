@@ -1,0 +1,51 @@
+<!--Autora: Ludmyla Oliveira Soares
+	Data: 24/10/2019
+	Função:  Criar um algoritmos que entre com uma palavra e imprima conforme o exemplo:
+				◦ Palavra: sonho
+				◦ SONHO
+				◦ SONHO SONHO
+				◦ SONHO SONHO SONHO
+				◦ SONHO SONHO SONHO SONHO
+				-->
+<!DOCTYPE html>
+	<head>
+		<title>PHP | Exercícios 12</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="estilo.css" rel="stylesheet">
+	</head>
+		<!-- Início validação formulário em branco -->
+		<script type="text/javascript" language="javascript">
+			function verificaNum(form) {
+				var x = form.texto.value;
+					if (x == "")  {
+					alert("Por favor, preencha o campo!");
+					form.texto.focus();
+					return false;
+				}
+			}
+		</script>
+		<!-- Fim validação formulário em branco -->
+	<body>
+		<div>
+			<!-- Início formulário para entrada e envio de dados -->
+			<form name="form" method="post" action="exercicio12.php" onsubmit="return verificaNum(this)">
+				<h1>Exercício 12</h1>
+					<p class="paragrafo">Criar um algoritmos que entre com uma palavra e imprima conforme o exemplo:<br/>
+						◦ Palavra: sonho <br/>
+						◦ SONHO <br/>
+						◦ SONHO SONHO <br/>
+						◦ SONHO SONHO SONHO <br/>
+						◦ SONHO SONHO SONHO SONHO<br/>
+					</p>	
+					<p><a class="paragrafo2">Digite uma palavra: </a> <input type="text" name="texto"></p>
+					</p>
+					<input class="botao" type="submit" value="Enviar">
+					<br/>
+			<!-- Fim formulário para entrada e envio de dados -->	
+			</form>
+		</div>
+	</body>
+</html>
+
+
+

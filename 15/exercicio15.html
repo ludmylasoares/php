@@ -1,0 +1,41 @@
+<!--Autora: Ludmyla Oliveira Soares
+	Data: 05/11/2019
+	Contato: ola@ludmylasoares.site
+	Função: Na usina de Angra dos Reis, os técnicos analisam a perda de massa de um material radioativo. Sabendo-se que este perde 25% de sua massa a cada 30 segundos, criar um algoritmos que imprima o tempo necessário para que a massa desse material seja menor que 0.10.
+-->
+<!DOCTYPE html>
+	<head>
+		<title>PHP | Exercícios 15</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="estilo.css" rel="stylesheet">
+	</head>
+		<!-- Início validação formulário em branco -->
+		<script type="text/javascript" language="javascript">
+			function verificaNum(form) {
+				var x = form.num.value;
+					if (x == "")  {
+					alert("Por favor, preencha o campo!");
+					form.num.focus();
+					return false;
+				}
+			}
+		</script>
+		<!-- Fim validação formulário em branco -->
+	<body>
+		<div>
+			<!-- Início formulário para entrada e envio de dados -->
+			<form name="form" method="post" action="exercicio15.php" onsubmit="return verificaNum(this)">
+				<h1>Exercício 15</h1>
+					<p class="paragrafo">Na usina de Angra dos Reis, os técnicos analisam a perda de massa de um material radioativo. Sabendo-se que este perde 25% de sua massa a cada 30 segundos, criar um algoritmos que imprima o tempo necessário para que a massa desse material seja menor que 0.10.</p>
+					<p class="paragrafo2">
+						<p><a class="paragrafo2">Digite a massa do material radioativo em gramas: </a><input type="number" name="num" step="0.01" ></p>
+						<input class="botao" type="submit" name="enviar" value="Calcular">
+					<br/>
+			<!-- Fim formulário para entrada e envio de dados -->	
+			</form>
+		</div>
+	</body>
+</html>
+
+
+

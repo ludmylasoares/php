@@ -1,0 +1,50 @@
+			h1{
+		      font-family: Arial, Helvetica, sans-serif;
+			  font-style: italic;
+			  color: #e41676;
+			  
+			}		
+			body{ background-color: #f7f5f6; 50%; font-family: Arial, Helvetica, sans-serif; font-size:16px; color:#e41676; }
+			a { color:#e41676}
+			
+			}
+			.li { list-style-type: circle}
+			 
+			.paragrafo{
+			  font-size:18px;
+			  font-style: bold;
+			  font-family: Arial, Helvetica, sans-serif;
+			  color: #e41676;  
+			} 
+			.paragrafo2{
+			  font-style: bold;
+			  font-family: Arial, Helvetica, sans-serif;
+			  font-size:22px;
+			  color: #e41676; 
+			  
+			}
+			.botao {
+				background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+				background-color:#599bb3;
+				border-radius:8px;
+				display:inline-block;
+				cursor:pointer;
+				color:#ffffff;
+				font-family: Arial, Helvetica, sans-serif;
+				font-size:16px;
+				padding:8px 15px;
+				text-decoration:none;
+				text-shadow:0px 1px 0px #3d768a;
+				
+			}
+			.botao:hover {
+				background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+				background-color:#408c99;
+			}
+			.botao:active {
+				position:relative;
+				top:1px;
+			}
+			
+			
+			

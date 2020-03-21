@@ -1,0 +1,43 @@
+<!--Autora: Ludmyla Oliveira Soares
+	Data: 22/10/2019
+	Função: Entrar com 3 números e imprimi-los em ordem decrescente (suponha números diferentes).
+-->
+<!DOCTYPE html>
+	<head>
+		<title>PHP | Exercícios 04</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="estilo.css" rel="stylesheet">
+	</head>
+		<!-- Início validação formulário em branco -->
+		<script type="text/javascript" language="javascript">
+			function verificaNum(form) {
+				var x = form.num1.value;
+				var y = form.num2.value;
+				var r = form.num3.value;
+				if (x == "" || y == "" || r == "") {
+					alert("Por favor, preencha todos os campos!");
+					form.num1.focus();
+					return false;
+				}
+			}
+		</script>
+		<!-- Fim validação formulário em branco --></script>
+	<body>
+		<div>
+			<!-- Início formulário para entrada e envio de dados -->
+			<form name="form" method="post" action="exercicio04.php" onsubmit="return verificaNum(this)">
+				<h1>Exercício 04</h1>
+					<p class="paragrafo">Entrar com 3 números e imprimi-los em ordem decrescente (suponha números diferentes).</p>
+					<p><a class="paragrafo">Digite o 1º número: </a> <input type="number" name="num1"></p>
+					<p><a class="paragrafo">Digite o 2º número: </a> <input type="number" name="num2"></p>
+					<p><a class="paragrafo">Digite o 3º número: </a> <input type="number" name="num3"></p>
+					<input class="botao" type="submit" value="Enviar">
+						<br/>
+			<!-- Fim formulário para entrada e envio de dados -->	
+			</form>
+		</div>
+	</body>
+</html>
+
+
+

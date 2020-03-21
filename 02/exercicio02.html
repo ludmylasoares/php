@@ -1,0 +1,40 @@
+<!--Autora: Ludmyla Oliveira Soares
+	Data: 21/10/2019
+	Função: Entrar com um número e informar se ele é divisível por 10, por 5, por 2 ou se não é divisível por nenhum destes
+-->
+<!DOCTYPE html>
+	<head>
+		<title>PHP | Exercícios 02</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="estilo.css" rel="stylesheet">
+	</head>
+		<!-- Início validação formulário em branco -->
+		<script type="text/javascript" language="javascript">
+			function verificaNum(form) {
+				var x = form.num.value;
+				if (x == "") {
+					alert("Por favor, digite um número");
+					form.num.focus();
+					return false;
+				}
+			}
+		</script>
+		<!-- Fim validação formulário em branco --></script>
+	<body>
+		<div>
+			<!-- Início formulário para entrada e envio de dados -->
+			<form name="form" method="post" action="exercicio02.php" onsubmit="return verificaNum(this)">
+				<h1>Exercício 02</h1>
+					<p class="paragrafo">Entrar com um número e informar se ele é divisível por 10, por 5, por 2 ou se não é divisível por nenhum destes!</p>
+					<a class="paragrafo">Digite um número: </a>
+					<input type="number" name="num"></p>
+					<input class="botao" type="submit" value="Enviar">
+					<br/>
+			<!-- Fim formulário para entrada e envio de dados -->	
+			</form>
+		</div>
+	</body>
+</html>
+
+
+

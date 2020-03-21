@@ -1,0 +1,48 @@
+<!--Autora: Ludmyla Oliveira Soares
+	Data: 21/10/2019
+	Função: Entrar com nome, sexo e idade de uma pessoa. Se a pessoa for do sexo feminino e tiver menos que 25 anos, imprimir nome e a mensagem: ACEITA. 
+	Caso contrário, imprimir nome e a mensagem: NÃO ACEITA.
+-->
+<!DOCTYPE html>
+	<head>
+		<title>PHP | Exercícios 03</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="estilo.css" rel="stylesheet">
+	</head>
+		<!-- Início validação formulário em branco -->
+		<script type="text/javascript" language="javascript">
+			function verificaNum(form) {
+				var x = form.nome.value;
+				var y = form.idade.value;
+				if (x == "" || y == "")  {
+					alert("Por favor, preencha todos os campos!");
+					form.nome.focus();
+					return false;
+				}
+			}
+		</script>
+		<!-- Fim validação formulário em branco --></script>
+	<body>
+		<div>
+			<!-- Início formulário para entrada e envio de dados -->
+			<form name="form" method="post" action="exercicio03.php" onsubmit="return verificaNum(this)">
+				<h1>Exercício 03</h1>
+					<p class="paragrafo">Entrar com nome, sexo e idade de uma pessoa. Se a pessoa for do sexo feminino e tiver menos que 25 anos, imprimir nome e a mensagem: ACEITA.<br/>
+					Caso contrário, imprimir nome e a mensagem: NÃO ACEITA.</p>
+					<p><a class="paragrafo">Digite o nome: </a> <input type="text" name="nome"></p>
+					<a class="paragrafo">Selecione o sexo: </a>
+						<select name="sexo" style="width:150px; height:21px">
+							<option name="feminino" value="feminino" selected="selected"  >Feminino</option>
+							<option name="masculino" value="masculino" >Masculino</option>
+						</select>
+					<p><a class="paragrafo">Digite a idade: </a> <input type="number" name="idade"></p>
+					<input class="botao" type="submit" value="Enviar">
+						<br/>
+			<!-- Fim formulário para entrada e envio de dados -->	
+			</form>
+		</div>
+	</body>
+</html>
+
+
+

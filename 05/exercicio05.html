@@ -1,0 +1,43 @@
+<!--Autora: Ludmyla Oliveira Soares
+	Data: 22/10/2019
+	Função: Ler 3 números, os possíveis lados de um triângulo, e imprimir a classificação de acordo com tamanho dos lados.
+-->
+<!DOCTYPE html>
+	<head>
+		<title>PHP | Exercícios 05</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="estilo.css" rel="stylesheet">
+	</head>
+		<!-- Início validação formulário em branco -->
+		<script type="text/javascript" language="javascript">
+			function verificaNum(form) {
+				var x = form.num1.value;
+				var y = form.num2.value;
+				var r = form.num3.value;
+				if (x == "" || y == "" || r == "") {
+					alert("Por favor, preencha todos os campos!");
+					form.num1.focus();
+					return false;
+				}
+			}
+		</script>
+		<!-- Fim validação formulário em branco --></script>
+	<body>
+		<div>
+			<!-- Início formulário para entrada e envio de dados -->
+			<form name="form" method="post" action="exercicio05.php" onsubmit="return verificaNum(this)">
+				<h1>Exercício 05</h1>
+					<p class="paragrafo">Ler 3 números, os possíveis lados de um triângulo, e imprimir a classificação de acordo com tamanho dos lados.</p>
+					<p><a class="paragrafo">Digite o 1º lado: </a> <input type="number" name="num1"></p>
+					<p><a class="paragrafo">Digite o 2º lado: </a> <input type="number" name="num2"></p>
+					<p><a class="paragrafo">Digite o 3º lado: </a> <input type="number" name="num3"></p>
+					<input class="botao" type="submit" value="Enviar">                                                                                
+						<br/>
+			<!-- Fim formulário para entrada e envio de dados -->	
+			</form>
+		</div>
+	</body>
+</html>
+
+
+
